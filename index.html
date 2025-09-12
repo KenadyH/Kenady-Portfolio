@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kenady Helm Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Kenady Helm</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+                <li><a href="images/resume.pdf" download>Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="about-container reveal">
+    <div class="about-left">
+      <img src="images/NTEN-9158-X4.jpg" class="me" alt="Kenady Helm">
+    </div>
+    <div class="about-right">
+      <h2>Hello!</h2>
+      <p>I'm Kenady Helm, a student at Base Camp Coding Academy in Oxford, MS, 
+      studying to be a software developer. I’m also passionate about digital skills 
+      and helping others with technology.</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="reveal">
+      <h2 class="section-title">Skills</h2>
+      
+      <!-- Programming Languages -->
+      <div class="skills-row">
+          <div class="skill">
+              <i class="fab fa-python fa-3x"></i>
+              <p>Python</p>
+          </div>
+          <div class="skill">
+              <i class="fab fa-html5 fa-3x"></i>
+              <p>HTML</p>
+          </div>
+          <div class="skill">
+              <i class="fab fa-css3-alt fa-3x"></i>
+              <p>CSS3</p>
+          </div>
+          <div class="skill">
+              <i class="fab fa-js-square fa-3x"></i>
+              <p>JavaScript</p>
+          </div>
+          <div class="skill">
+              <i class="fab fa-react fa-3x"></i>
+              <p>React</p>
+          </div>
+      </div>
+  
+      <!-- Frameworks & Tools -->
+      <div class="skills-row">
+          <div class="skill">
+              <i class="fas fa-database fa-3x"></i>
+              <p>SQL</p>
+          </div>
+          <div class="skill">
+              <i class="fas fa-leaf fa-3x"></i>
+              <p>Spring</p>
+          </div>
+          <div class="skill">
+              <i class="fab fa-github fa-3x"></i>
+              <p>GitHub</p>
+          </div>
+          <div class="skill">
+              <i class="fas fa-pencil-ruler fa-3x"></i>
+              <p>Canva</p>
+          </div>
+      </div>
+  </section>
+
+  
+  <section id="projects" class="reveal">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-container">
+      <div class="project-card-container">
+        <div class="project-card">
+          <div class="project-card-front">
+            <i class="fas fa-dice"></i>
+            <p>Dice Game</p>
+          </div>
+          <div class="project-card-back">
+            <h3>Dice Game</h3>
+            <p>A fun and interactive dice game built with Python.</p>
+            <a href="https://github.com/KenadyH/Dice-Game" target="_blank">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card-container">
+        <div class="project-card">
+          <div class="project-card-front">
+            <i class="fas fa-goat"></i>
+            <p>GOAT Project</p>
+          </div>
+          <div class="project-card-back">
+            <h3>GOAT Project</h3>
+            <p>A web project showcasing the "Greatest Of All Time".</p>
+            <a href="https://github.com/KenadyH/BCCA-GOAT-PROJECT" target="_blank">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="contact" class="reveal">
+    <h2 class="section-title">Contact</h2>
+    <div class="contact-container">
+      <div class="contact-box">
+        <i clas ="fas fa-envelope fa-2x"></i>
+        <a
+      href="mailto:kenady.helm1020@gmail.com">kenady.helm1020@gmail.com</a>
+      </div>
+      <div class="contact-box">
+        <i class="fas-phone fa-2x"></i>
+        <a href="tel:+16628017063">(662)801-7063</a>
+      </div>
+      <div class="contact-box">
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/kenadyhelm99" target="_blank">linkedin.com/in/kenadyhelm99</a></p>
+    </div>
+  </section>
+
+  
+  
+  <script>
+    const reveals = document.querySelectorAll(".reveal");
+
+    window.addEventListener("scroll", () => {
+      const windowHeight = window.innerHeight;
+      reveals.forEach(el => {
+        const elementTop = el.getBoundingClientRect().top;
+        if (elementTop < windowHeight - 100) {
+          el.classList.add("show");
+        }
+      });
+    });
+  </script>
+</body>
+</html>
