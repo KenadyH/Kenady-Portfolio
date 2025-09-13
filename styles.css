@@ -76,7 +76,7 @@ nav ul li a:hover {
   text-align: center;
   height: calc(100vh - 80px); 
   color: white;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/302172033_403958951824291_5136570867508224936_n.jpg') no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/302172033_403958951824291_5136570867508224936_n.jpg') no-repeat center 40%/cover;
   background-attachment: fixed;
 }
 
@@ -223,8 +223,13 @@ text-align: center;
   }
 
   #hero {
-    height: calc(100vh - 60px); /* Adjust for new header height */
-    background-attachment: scroll; /* Fix for mobile background image */
+    height: calc(100vh - 60px); 
+    background-attachment: scroll; 
+    background-position: center top; /* Keep image aligned to the top */
+  }
+
+  .hero-content {
+    padding-top: 150px; /* Push text down further to reveal face */
   }
 
   .hero-title {
